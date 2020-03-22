@@ -251,6 +251,12 @@ class ViewController2: UIViewController  {
                handler:  { (alert:UIAlertAction) -> Void in
                    self.playAgain()
            })
+        
+        
+        
+        
+        
+        
            
            alertController.addAction(playAgainAction)
            
