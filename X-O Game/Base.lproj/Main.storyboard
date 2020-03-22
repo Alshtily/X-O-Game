@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NtE-jv-Zdq">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="X_O_Game" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="zjs-MJ-u2F">
+                                <rect key="frame" x="10" y="362" width="394" height="400"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="AjR-di-h8t">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="128"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zx7-yZ-6la" customClass="XButton" customModule="X_O_Game" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="125.5" height="128"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="80"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
+                                                        <real key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="PressButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V69-sW-RoI"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZdR-d8-g3U" customClass="XButton" customModule="X_O_Game" customModuleProvider="target">
+                                                <rect key="frame" x="134.5" y="0.0" width="125" height="128"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="80"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
+                                                        <real key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="PressButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yLc-M3-QQn"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pVA-5l-C3N" customClass="XButton" customModule="X_O_Game" customModuleProvider="target">
+                                                <rect key="frame" x="268.5" y="0.0" width="125.5" height="128"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="80"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
+                                                        <real key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="PressButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nv9-Ox-AaC"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="4mh-Bn-2jr">
+                                        <rect key="frame" x="0.0" y="136" width="394" height="128"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Gs-O6-F6k" customClass="XButton" customModule="X_O_Game" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="125.5" height="128"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="80"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
+                                                        <real key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="PressButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e7G-3I-3S1"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OHb-su-pXC" customClass="XButton" customModule="X_O_Game" customModuleProvider="target">
+                                                <rect key="frame" x="134.5" y="0.0" width="125" height="128"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="80"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
+                                                        <real key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="PressButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fwt-yB-9Of"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SDX-f8-7lQ" customClass="XButton" customModule="X_O_Game" customModuleProvider="target">
+                                                <rect key="frame" x="268.5" y="0.0" width="125.5" height="128"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="80"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
+                                                        <real key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="PressButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2eG-ex-77F"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="UNV-fB-csL">
+                                        <rect key="frame" x="0.0" y="272" width="394" height="128"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JI6-Lk-7Cg" customClass="XButton" customModule="X_O_Game" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="125.5" height="128"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="80"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
+                                                        <real key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="PressButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cvr-HH-Lc3"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfj-44-XfB" customClass="XButton" customModule="X_O_Game" customModuleProvider="target">
+                                                <rect key="frame" x="134.5" y="0.0" width="125" height="128"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="80"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
+                                                        <real key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="PressButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="erb-zF-mRZ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6c6-gp-qdi" customClass="XButton" customModule="X_O_Game" customModuleProvider="target">
+                                                <rect key="frame" x="268.5" y="0.0" width="125.5" height="128"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="80"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
+                                                        <real key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="PressButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YtY-oN-6b1"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="lxa-CL-iCG"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X-O GAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UBc-hN-zh4">
+                                <rect key="frame" x="20" y="108" width="216.5" height="58.5"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" X" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sxa-UM-hp9" customClass="Xlabel" customModule="X_O_Game" customModuleProvider="target">
+                                <rect key="frame" x="10" y="805" width="187" height="57"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="187" id="omW-tx-1lO"/>
+                                    <constraint firstAttribute="height" constant="57" id="vYc-CR-csO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="40"/>
+                                <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusV">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bnx-MF-7vn" customClass="Xlabel" customModule="X_O_Game" customModuleProvider="target">
+                                <rect key="frame" x="56" y="810" width="131" height="46"/>
+                                <color key="backgroundColor" red="0.97933279418583319" green="1" blue="0.97807776492647269" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="131" id="4Ww-Th-4KD"/>
+                                    <constraint firstAttribute="height" constant="46" id="CZz-5q-w0D"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="24"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusV">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" O " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HPQ-IK-NGO" customClass="Xlabel" customModule="X_O_Game" customModuleProvider="target">
+                                <rect key="frame" x="207" y="805" width="187" height="57"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="T6o-aJ-KnP"/>
+                                    <constraint firstAttribute="width" constant="187" id="hZH-LN-A9T"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="40"/>
+                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusV">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pea-Co-N5n" customClass="Xlabel" customModule="X_O_Game" customModuleProvider="target">
+                                <rect key="frame" x="253" y="810" width="131" height="46"/>
+                                <color key="backgroundColor" red="0.97933279419999997" green="1" blue="0.97807776489999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="131" id="Y4J-q8-l3h"/>
+                                    <constraint firstAttribute="height" constant="46" id="hMc-B2-z1C"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="24"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusV">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5x-gG-M0U">
+                                <rect key="frame" x="314" y="108" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="47q-hg-Bd6"/>
+                                    <constraint firstAttribute="height" constant="80" id="NTU-L4-qIe"/>
+                                </constraints>
+                                <state key="normal" image="a.png"/>
+                                <connections>
+                                    <action selector="ResetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JfK-8Z-wlp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Two Player" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IgZ-0s-10V">
+                                <rect key="frame" x="20" y="218" width="374" height="57"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Pea-Co-N5n" secondAttribute="bottom" constant="6" id="1OK-G7-7PK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Pea-Co-N5n" secondAttribute="trailing" constant="30" id="C2G-Cs-Dtz"/>
+                            <constraint firstItem="IgZ-0s-10V" firstAttribute="top" secondItem="Y5x-gG-M0U" secondAttribute="bottom" constant="30" id="CVG-20-PzX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HPQ-IK-NGO" secondAttribute="trailing" constant="20" id="HT3-PF-4Aw"/>
+                            <constraint firstItem="Y5x-gG-M0U" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="HhC-lJ-VGq"/>
+                            <constraint firstItem="bnx-MF-7vn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="56" id="KKZ-yy-JGh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zjs-MJ-u2F" secondAttribute="bottom" constant="100" id="NpN-Hh-vx8"/>
+                            <constraint firstItem="UBc-hN-zh4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="TIv-Fc-oCc"/>
+                            <constraint firstItem="Sxa-UM-hp9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Ue8-ck-W7d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zjs-MJ-u2F" secondAttribute="trailing" constant="10" id="ZCX-Ye-ntm"/>
+                            <constraint firstItem="Sxa-UM-hp9" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ZjL-hB-neV"/>
+                            <constraint firstItem="IgZ-0s-10V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="aN9-HW-a6k"/>
+                            <constraint firstItem="zjs-MJ-u2F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="bjx-JL-b3T"/>
+                            <constraint firstItem="UBc-hN-zh4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="cdx-n3-p9b"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Y5x-gG-M0U" secondAttribute="trailing" constant="20" id="deo-7i-O9d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IgZ-0s-10V" secondAttribute="trailing" constant="20" id="nZ2-pT-Fut"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bnx-MF-7vn" secondAttribute="bottom" constant="6" id="qFd-J6-4BP"/>
+                            <constraint firstItem="HPQ-IK-NGO" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="wPp-bg-RJV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Taw-Z0-7eH"/>
+                    <connections>
+                        <outlet property="Or" destination="Pea-Co-N5n" id="7Va-gM-mve"/>
+                        <outlet property="Xr" destination="bnx-MF-7vn" id="Jlr-fh-LpX"/>
+                        <outlet property="b1" destination="Zx7-yZ-6la" id="7Mn-Gf-iU5"/>
+                        <outlet property="b2" destination="ZdR-d8-g3U" id="u8X-l9-bxW"/>
+                        <outlet property="b3" destination="pVA-5l-C3N" id="BI8-t9-ikw"/>
+                        <outlet property="b4" destination="3Gs-O6-F6k" id="wj7-80-xdW"/>
+                        <outlet property="b5" destination="OHb-su-pXC" id="hzO-RD-1wk"/>
+                        <outlet property="b6" destination="SDX-f8-7lQ" id="f48-78-8Zd"/>
+                        <outlet property="b7" destination="JI6-Lk-7Cg" id="udG-bq-GZR"/>
+                        <outlet property="b8" destination="cfj-44-XfB" id="lWn-FM-DFg"/>
+                        <outlet property="b9" destination="6c6-gp-qdi" id="vu1-UQ-sVE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="745" y="620"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="H4E-s9-w8o">
+            <objects>
+                <viewController id="5rx-aa-GOS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dWe-Dw-pJj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N7E-n9-UcG">
+                                <rect key="frame" x="80" y="428" width="254" height="44"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <state key="normal" title="Single Player">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ofS-Ll-qxv" kind="show" id="dnS-we-eWx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qSA-aO-c7R">
+                                <rect key="frame" x="80" y="512" width="254" height="44"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <state key="normal" title="Two Player">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="bmC-4l-ACt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="N7E-n9-UcG" firstAttribute="top" secondItem="r3X-RU-d19" secondAttribute="top" constant="340" id="17O-GP-QU8"/>
+                            <constraint firstItem="r3X-RU-d19" firstAttribute="trailing" secondItem="qSA-aO-c7R" secondAttribute="trailing" constant="80" id="F1B-Dj-F7m"/>
+                            <constraint firstItem="r3X-RU-d19" firstAttribute="trailing" secondItem="N7E-n9-UcG" secondAttribute="trailing" constant="80" id="GeM-kB-fep"/>
+                            <constraint firstItem="qSA-aO-c7R" firstAttribute="top" secondItem="N7E-n9-UcG" secondAttribute="bottom" constant="40" id="o7Z-a1-ais"/>
+                            <constraint firstItem="qSA-aO-c7R" firstAttribute="leading" secondItem="r3X-RU-d19" secondAttribute="leading" constant="80" id="uUU-cS-rdV"/>
+                            <constraint firstItem="N7E-n9-UcG" firstAttribute="leading" secondItem="r3X-RU-d19" secondAttribute="leading" constant="80" id="upn-Qt-aJq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="r3X-RU-d19"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="T6W-3c-rze">
+                        <barButtonItem key="backBarButtonItem" title="Home" id="oN6-fl-JoI"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k8m-b0-Gzf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-84.057971014492765" y="139.95535714285714"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="8sZ-fk-aXT">
+            <objects>
+                <viewController id="ofS-Ll-qxv" customClass="ViewController2" customModule="X_O_Game" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I6d-oK-YjB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zpj-TI-XJW" customClass="XButton" customModule="X_O_Game" customModuleProvider="target">
+                                <rect key="frame" x="45" y="472" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.86785507549999996" green="0.86785507549999996" blue="0.86785507549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Sr4-ul-09R"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="60"/>
+                                <state key="normal">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pressedButton:" destination="ofS-Ll-qxv" eventType="touchUpInside" id="N10-KH-0Kz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O7f-dg-Bww" customClass="XButton" customModule="X_O_Game" customModuleProvider="target">
+                                <rect key="frame" x="153" y="472" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.86785507549999996" green="0.86785507549999996" blue="0.86785507549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="O6j-no-i5Z"/>
+                                    <constraint firstAttribute="height" constant="100" id="Uzz-8c-oia"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="60"/>
+                                <state key="normal">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pressedButton:" destination="ofS-Ll-qxv" eventType="touchUpInside" id="RXg-4L-iur"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gt6-Zh-VNG" customClass="XButton" customModule="X_O_Game" customModuleProvider="target">
+                                <rect key="frame" x="261" y="472" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.86785507549999996" green="0.86785507549999996" blue="0.86785507549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="E1t-9A-dE6"/>
+                                    <constraint firstAttribute="width" constant="100" id="a5W-Nu-hY5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="60"/>
+                                <state key="normal">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pressedButton:" destination="ofS-Ll-qxv" eventType="touchUpInside" id="AGI-vv-Ugr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNs-Kd-SnH" customClass="XButton" customModule="X_O_Game" customModuleProvider="target">
+                                <rect key="frame" x="45" y="364" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.86785507549999996" green="0.86785507549999996" blue="0.86785507549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="AcF-QQ-S1J"/>
+                                    <constraint firstAttribute="width" constant="100" id="kT6-AU-DbH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="60"/>
+                                <state key="normal">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pressedButton:" destination="ofS-Ll-qxv" eventType="touchUpInside" id="i9b-Dn-NhF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xFT-xX-4ri" customClass="XButton" customModule="X_O_Game" customModuleProvider="target">
+                                <rect key="frame" x="153" y="364" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.86785507549999996" green="0.86785507549999996" blue="0.86785507549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="ehk-jw-hTp"/>
+                                    <constraint firstAttribute="height" constant="100" id="fkC-SD-Y3B"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="60"/>
+                                <state key="normal">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pressedButton:" destination="ofS-Ll-qxv" eventType="touchUpInside" id="e14-Be-d5J"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Avb-or-wP4" customClass="XButton" customModule="X_O_Game" customModuleProvider="target">
+                                <rect key="frame" x="261" y="364" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.86785507549999996" green="0.86785507549999996" blue="0.86785507549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="MZl-Eg-peq"/>
+                                    <constraint firstAttribute="height" constant="100" id="hid-ok-MBO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="60"/>
+                                <state key="normal">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pressedButton:" destination="ofS-Ll-qxv" eventType="touchUpInside" id="gmK-g9-Ywq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kNh-sX-8zp" customClass="XButton" customModule="X_O_Game" customModuleProvider="target">
+                                <rect key="frame" x="45" y="580" width="100" height="97"/>
+                                <color key="backgroundColor" red="0.86785507549999996" green="0.86785507549999996" blue="0.86785507549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="geY-0i-hoA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="60"/>
+                                <state key="normal">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pressedButton:" destination="ofS-Ll-qxv" eventType="touchUpInside" id="x9Z-Or-qo6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YSQ-0M-nab" customClass="XButton" customModule="X_O_Game" customModuleProvider="target">
+                                <rect key="frame" x="153" y="580" width="100" height="97"/>
+                                <color key="backgroundColor" red="0.86785507549999996" green="0.86785507549999996" blue="0.86785507549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="hzX-Y0-AZx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="60"/>
+                                <state key="normal">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pressedButton:" destination="ofS-Ll-qxv" eventType="touchUpInside" id="4xq-Gm-WHr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6MT-P3-Mbh" customClass="XButton" customModule="X_O_Game" customModuleProvider="target">
+                                <rect key="frame" x="261" y="580" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.86785507549999996" green="0.86785507549999996" blue="0.86785507549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="gd2-zf-3Wh"/>
+                                    <constraint firstAttribute="height" constant="100" id="ufv-pK-Foy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="60"/>
+                                <state key="normal">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pressedButton:" destination="ofS-Ll-qxv" eventType="touchUpInside" id="C4U-4V-TN5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Single Player" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q7S-7p-GqY">
+                                <rect key="frame" x="75" y="299" width="264" height="57"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIG-rV-n1A">
+                                <rect key="frame" x="304" y="796" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="3ee-8l-MaB"/>
+                                    <constraint firstAttribute="width" constant="80" id="mX9-R0-h0h"/>
+                                </constraints>
+                                <state key="normal" image="a.png">
+                                    <color key="titleColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X-O GAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgP-zM-EzB">
+                                <rect key="frame" x="20" y="156" width="216.5" height="58"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="YSQ-0M-nab" firstAttribute="top" secondItem="O7f-dg-Bww" secondAttribute="bottom" constant="8" id="2in-lw-i19"/>
+                            <constraint firstItem="gt6-Zh-VNG" firstAttribute="top" secondItem="Avb-or-wP4" secondAttribute="bottom" constant="8" id="7vO-qw-zMR"/>
+                            <constraint firstItem="Q7S-7p-GqY" firstAttribute="leading" secondItem="TC9-1g-wCq" secondAttribute="leading" constant="75" id="AXI-I3-T0j"/>
+                            <constraint firstItem="hgP-zM-EzB" firstAttribute="leading" secondItem="TC9-1g-wCq" secondAttribute="leading" constant="20" id="BJw-B8-KOD"/>
+                            <constraint firstItem="xFT-xX-4ri" firstAttribute="leading" secondItem="TNs-Kd-SnH" secondAttribute="trailing" constant="8" id="CXM-wC-UTJ"/>
+                            <constraint firstItem="O7f-dg-Bww" firstAttribute="top" secondItem="xFT-xX-4ri" secondAttribute="bottom" constant="8" id="DaL-sN-Lqi"/>
+                            <constraint firstItem="gt6-Zh-VNG" firstAttribute="leading" secondItem="O7f-dg-Bww" secondAttribute="trailing" constant="8" id="FRg-oP-ZSG"/>
+                            <constraint firstItem="zpj-TI-XJW" firstAttribute="leading" secondItem="TC9-1g-wCq" secondAttribute="leading" constant="45" id="GQV-CM-dsM"/>
+                            <constraint firstItem="YSQ-0M-nab" firstAttribute="leading" secondItem="kNh-sX-8zp" secondAttribute="trailing" constant="8" id="Gro-0l-2GR"/>
+                            <constraint firstItem="TC9-1g-wCq" firstAttribute="trailing" secondItem="6MT-P3-Mbh" secondAttribute="trailing" constant="53" id="LPL-Lu-5oK"/>
+                            <constraint firstItem="Avb-or-wP4" firstAttribute="leading" secondItem="xFT-xX-4ri" secondAttribute="trailing" constant="8" id="Mgh-PH-Wub"/>
+                            <constraint firstAttribute="bottom" secondItem="HIG-rV-n1A" secondAttribute="bottom" constant="20" id="Mhr-0t-Eav"/>
+                            <constraint firstItem="O7f-dg-Bww" firstAttribute="leading" secondItem="zpj-TI-XJW" secondAttribute="trailing" constant="8" id="NkL-GT-G96"/>
+                            <constraint firstItem="Q7S-7p-GqY" firstAttribute="top" secondItem="hgP-zM-EzB" secondAttribute="bottom" constant="85" id="Obt-px-31m"/>
+                            <constraint firstItem="6MT-P3-Mbh" firstAttribute="top" secondItem="gt6-Zh-VNG" secondAttribute="bottom" constant="8" id="PG7-KK-Czp"/>
+                            <constraint firstItem="6MT-P3-Mbh" firstAttribute="leading" secondItem="YSQ-0M-nab" secondAttribute="trailing" constant="8" id="Ume-FN-LXr"/>
+                            <constraint firstItem="Avb-or-wP4" firstAttribute="leading" secondItem="xFT-xX-4ri" secondAttribute="trailing" constant="8" id="WHv-VB-K1h"/>
+                            <constraint firstItem="TNs-Kd-SnH" firstAttribute="top" secondItem="Q7S-7p-GqY" secondAttribute="bottom" constant="8" id="WVJ-vC-0Im"/>
+                            <constraint firstItem="Avb-or-wP4" firstAttribute="top" secondItem="Q7S-7p-GqY" secondAttribute="bottom" constant="8" id="YdN-a6-DUn"/>
+                            <constraint firstItem="zpj-TI-XJW" firstAttribute="top" secondItem="TNs-Kd-SnH" secondAttribute="bottom" constant="8" id="b9k-Ly-qAL"/>
+                            <constraint firstItem="O7f-dg-Bww" firstAttribute="leading" secondItem="zpj-TI-XJW" secondAttribute="trailing" constant="8" id="bsS-Zb-UgZ"/>
+                            <constraint firstItem="gt6-Zh-VNG" firstAttribute="leading" secondItem="O7f-dg-Bww" secondAttribute="trailing" constant="8" id="cXc-4M-NfR"/>
+                            <constraint firstItem="YSQ-0M-nab" firstAttribute="leading" secondItem="kNh-sX-8zp" secondAttribute="trailing" constant="8" id="efO-We-SQ0"/>
+                            <constraint firstItem="gt6-Zh-VNG" firstAttribute="top" secondItem="Avb-or-wP4" secondAttribute="bottom" constant="8" id="gvi-Rb-HeF"/>
+                            <constraint firstItem="TC9-1g-wCq" firstAttribute="trailing" secondItem="gt6-Zh-VNG" secondAttribute="trailing" constant="53" id="jbw-O2-DXe"/>
+                            <constraint firstItem="TNs-Kd-SnH" firstAttribute="top" secondItem="Q7S-7p-GqY" secondAttribute="bottom" constant="8" id="k5W-Tw-HOs"/>
+                            <constraint firstItem="kNh-sX-8zp" firstAttribute="leading" secondItem="TC9-1g-wCq" secondAttribute="leading" constant="45" id="kbp-CK-GAE"/>
+                            <constraint firstItem="O7f-dg-Bww" firstAttribute="top" secondItem="xFT-xX-4ri" secondAttribute="bottom" constant="8" id="lcw-HO-i63"/>
+                            <constraint firstItem="hgP-zM-EzB" firstAttribute="top" secondItem="TC9-1g-wCq" secondAttribute="top" constant="68" id="pIo-Kg-nEJ"/>
+                            <constraint firstItem="TC9-1g-wCq" firstAttribute="trailing" secondItem="HIG-rV-n1A" secondAttribute="trailing" constant="30" id="pNt-Vh-d1l"/>
+                            <constraint firstItem="TNs-Kd-SnH" firstAttribute="leading" secondItem="TC9-1g-wCq" secondAttribute="leading" constant="45" id="pVQ-d8-VDP"/>
+                            <constraint firstItem="xFT-xX-4ri" firstAttribute="top" secondItem="Q7S-7p-GqY" secondAttribute="bottom" constant="8" id="qav-sl-u4l"/>
+                            <constraint firstItem="kNh-sX-8zp" firstAttribute="top" secondItem="zpj-TI-XJW" secondAttribute="bottom" constant="8" id="rTr-6x-ADT"/>
+                            <constraint firstItem="6MT-P3-Mbh" firstAttribute="leading" secondItem="YSQ-0M-nab" secondAttribute="trailing" constant="8" id="ud9-gf-4ET"/>
+                            <constraint firstItem="TC9-1g-wCq" firstAttribute="trailing" secondItem="Q7S-7p-GqY" secondAttribute="trailing" constant="75" id="vZc-2q-z3D"/>
+                            <constraint firstItem="zpj-TI-XJW" firstAttribute="top" secondItem="TNs-Kd-SnH" secondAttribute="bottom" constant="8" id="wWc-dk-iUN"/>
+                            <constraint firstItem="TC9-1g-wCq" firstAttribute="trailing" secondItem="Avb-or-wP4" secondAttribute="trailing" constant="53" id="zCZ-tX-GLN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TC9-1g-wCq"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4UO-gP-A46"/>
+                    <connections>
+                        <outlet property="b1" destination="TNs-Kd-SnH" id="WpN-BL-yEp"/>
+                        <outlet property="b2" destination="xFT-xX-4ri" id="ncF-cD-3SC"/>
+                        <outlet property="b3" destination="Avb-or-wP4" id="bO9-gf-CVy"/>
+                        <outlet property="b4" destination="zpj-TI-XJW" id="90F-PB-5cF"/>
+                        <outlet property="b5" destination="O7f-dg-Bww" id="V2k-2I-84d"/>
+                        <outlet property="b6" destination="gt6-Zh-VNG" id="BUp-gN-xrm"/>
+                        <outlet property="b7" destination="kNh-sX-8zp" id="xgy-jE-jim"/>
+                        <outlet property="b8" destination="YSQ-0M-nab" id="E7F-QJ-YNq"/>
+                        <outlet property="b9" destination="6MT-P3-Mbh" id="dbD-12-9yo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iOK-XP-HNt" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="744.92753623188412" y="-68.303571428571431"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="N66-CT-RIC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NtE-jv-Zdq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kqL-8j-WEA">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5rx-aa-GOS" kind="relationship" relationship="rootViewController" id="3M1-VD-ovw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="laT-1g-DLS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-994.20289855072474" y="139.95535714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="a.png" width="512" height="512"/>
+    </resources>
+</document>
