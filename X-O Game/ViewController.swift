@@ -117,6 +117,10 @@ class ViewController: UIViewController {
          b5.titleLabel?.text == winner && b7.titleLabel?.text == winner)
         
         {
+        
+            
+            
+            
             
        generator.notificationOccurred(.success)
 
